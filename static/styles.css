@@ -1,0 +1,173 @@
+.nav-text {
+    font-family: Helvetica;
+    font-size: 24px;
+}
+
+.nav-item {
+    padding-right: 20px;
+}
+
+.caption-1 {
+    color: yellow;
+    font-family: Georgia;
+    font-size: 55px;
+    padding-bottom: 660px;
+}
+
+.caption-2 {
+    font-family: Verdana, Helvetica;
+    font-size: 45px;
+    padding-bottom: 300px;
+    padding-right: 625px;
+}
+
+.caption-3 {
+    font-family: Verdana, Helvetica;
+    font-size: 40px;
+    padding-bottom: 110px;
+    padding-right: 300px;
+}
+
+.caption-4 {
+    font-family: Verdana, Helvetica;
+    font-size: 45px;
+    padding-bottom: 175px;
+    padding-right: 250px;
+    padding-left: 0px;
+}
+
+.caption-5 {
+    font-family: Verdana, Helvetica;
+    font-size: 40px;
+    padding-bottom: 230px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.caption-orange {
+    color: #FFA800;
+}
+
+.apology-img {
+    padding-top: 40px;
+    padding-left: 300px;
+}
+
+.cash-input {
+    margin: 50px 700px;
+}
+
+.cash-text {
+    padding: 10px 22px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+.cash-button {
+    margin-left: 860px;
+    margin-top: -105px;
+}
+
+.uil-dollar-sign {
+    position: relative;
+    font-size: 20px;
+    right: 1px;
+    top: 36px;
+}
+
+.total-cash {
+    color: red;
+    font-family: Verdana, Helvetica;
+    font-size: 30px;
+    margin-left: 650px;
+}
+
+.tt-button {
+    padding: 20px 40px;
+    font-size: 25px;
+    margin-left: 175px;
+    margin-top: 50px;
+}
+
+.badminton-button {
+    padding: 20px 40px;
+    font-size: 25px;
+    margin-left: 265px;
+    margin-top: 50px;
+}
+
+.gym-button {
+    padding: 20px 40px;
+    font-size: 25px;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+
+.fac-caption {
+    font-family: Verdana, Helvetica;
+    margin-top: 60px;
+    margin-left: 500px;
+}
+
+.sports-header {
+    color: #0019FF;
+    margin-top: 40px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.sports-details {
+    color: #008DFF;
+    font-family: Verdana, Helvetica;
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 40px;
+}
+
+.booking-link {
+    color: red;
+    margin-top: 40px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.booking-button {
+    padding: 10px 20px;
+    margin-top: -80px;
+    margin-left: 420px;
+}
+
+.table-container {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 70%;
+}
+
+.table-section {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.booking-dropdown {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.custom-select {
+    margin-left: 400px;
+    height: 45px;
+    width: 600px;
+}
+
+.confirm-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 0px;
+    margin-left: 30px;
+}
