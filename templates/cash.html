@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cash
+{% endblock %}
+
+{% block main %}
+    <form action="/cash" method="post">
+        <div class="mb-3 cash-input">
+            <i class="input-icon uil uil-dollar-sign"></i>
+            <input autofocus class="form-control mx-auto w-auto cash-text" id="cash" name="cash" min = "1" max="1000" placeholder="Amount" type="number">
+        </div>
+        <button class="btn btn-primary cash-button" type="submit">Add Cash</button>
+    </form>
+
+    <div class="total-cash">
+        <p>Total Amount: {{ total_cash }}</p>
+    </div>
+
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Gym
+{% endblock %}
+
+{% block main %}
+
+    <a href="/tt" class="btn btn-warning btn-lg tt-button" role="button" aria-pressed="true">Table Tennis</a>
+    <a href="/badminton" class="btn btn-success btn-lg badminton-button" role="button" aria-pressed="true">Badminton</a>
+    <a href="/gym" class="btn btn-danger btn-lg gym-button" role="button" aria-pressed="true">Gym</a>
+
+    <div class="sports-header">
+        <h1>Gym</h1>
+    </div>
+
+    <div class="sports-details">
+        <ul>
+            <li>Cost: $5.00 per hour</li>
+            <li>Maximum of 5 users per time slot.</li>
+            <li>Each time slot lasts 1 hour, each user is only allowed to book a maximum of 2 slots per day.</li>
+            <li>3 treadmills, 3 bicycles, 2kg-20kg dumbbells and numerous machines available.</li>
+            <li>Please wipe equipment after use with tissue and sanitizers provided.</li>
+        </ul>
+    </div>
+
+    <div class="booking-link">
+        <h2>Wish to book now?</h2>
+        <a href="/book_gym" class="btn btn-primary btn-lg booking-button" role="button" aria-pressed="true">Book</a>
+    </div>
+
+{% endblock %}

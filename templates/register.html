@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+    <form action="/register" method="post">
+        <div class="section">
+            <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3">Register</h4>
+                                        <div class="form-group">
+                                            <input type="text" name="username" class="form-style" placeholder="Choose Username" id="username" autocomplete="off">
+                                            <i class="input-icon uil uil-user-circle"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="password" class="form-style" placeholder="Choose Password" id="password" autocomplete="off" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="confirmation" class="form-style" placeholder="Confirm Password" id="confirmation" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <button class="btn btn-primary" type="submit">Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="/static/login_styles.css" />
+	<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+
+{% endblock %}

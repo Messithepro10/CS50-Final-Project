@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+
+    <form action="/login" method="post">
+        <div class="section">
+            <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <div class="section text-center">
+                                        <h4 class="mb-4 pb-3">Log In</h4>
+                                        <div class="form-group">
+                                            <input type="text" name="username" class="form-style" placeholder="Your Username" id="username" autocomplete="off">
+                                            <i class="input-icon uil uil-user-circle"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input type="password" name="password" class="form-style" placeholder="Your Password" id="password" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <button class="btn btn-primary" type="submit">Log In</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="/static/login_styles.css" />
+	<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+
+{% endblock %}

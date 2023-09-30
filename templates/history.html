@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <div class="sports-header">
+        <h1>My Bookings</h1>
+    </div>
+
+    <div class="table-container">
+        <div class="table-section">
+            <table class="table table-bordered table-striped table-info table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Sport</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in user_bookings %}
+                        <tr>
+                            <td>{{ booking["sport"] }}</td>
+                            <td>{{ booking["date"] }}</td>
+                            <td>{{ booking["time"] }}</td>
+                            <td>{{ booking["cost"] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}
