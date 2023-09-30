@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+    <!-- https://memegen.link/ -->
+    <img alt="{{ top }}" class="border img-fluid apology-img" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://resources.premierleague.com/premierleague/photo/2016/09/09/d655280a-ec4d-4084-a807-63dd5c69b9af/GettyImages-130010419.jpg" title="{{ top }}">
+{% endblock %}

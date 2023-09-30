@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Table Tennis Booking
+{% endblock %}
+
+{% block main %}
+
+    <a href="/book_tt" class="btn btn-warning btn-lg tt-button" role="button" aria-pressed="true">Table Tennis</a>
+    <a href="/book_bmt" class="btn btn-success btn-lg badminton-button" role="button" aria-pressed="true">Badminton</a>
+    <a href="/book_gym" class="btn btn-danger btn-lg gym-button" role="button" aria-pressed="true">Gym</a>
+
+    <div class="sports-header">
+        <h1>Table Tennis</h1>
+    </div>
+
+    <form action="/book_tt" method="post">
+        <div class="booking-dropdown">
+            <select name="timing" id="timing" class="custom-select">
+                <option selected>Choose your preferred timeslot</option>
+                {% for slot in tt_availability %}
+                    <option value="{{ slot['time'] }}">{{ slot['time'] }}</option>
+                {% endfor %}
+            </select>
+            <button class="btn btn-primary confirm-button" type="submit">Book</button>
+        </div>
+    </form>
+
+    <div class="table-container">
+        <div class="table-section">
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Time Slot</th>
+                        <th scope="col">Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for slot in tt_availability %}
+                        <tr>
+                            <td>{{ slot["time"] }}</td>
+                            <td>{{ slot["availability"] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var avail_data = document.querySelectorAll("td");
+        avail_data.forEach(function(element) {
+            if (element.innerHTML === "Available"){
+                element.parentNode.classList.add("table-success");
+            }
+            else if (element.innerHTML === "Booked"){
+                element.parentNode.classList.add("table-danger");
+            }
+        })
+    </script>
+
+{% endblock %}

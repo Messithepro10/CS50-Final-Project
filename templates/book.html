@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Book
+{% endblock %}
+
+{% block main %}
+
+    <a href="/book_tt" class="btn btn-warning btn-lg tt-button" role="button" aria-pressed="true">Table Tennis</a>
+    <a href="/book_bmt" class="btn btn-success btn-lg badminton-button" role="button" aria-pressed="true">Badminton</a>
+    <a href="/book_gym" class="btn btn-danger btn-lg gym-button" role="button" aria-pressed="true">Gym</a>
+
+    <div class="fac-caption">
+        <h2>Please select a sport to make a booking.</h2>
+    </div>
+
+{% endblock %}
