@@ -1,10 +1,12 @@
 # Mingu Sports Complex Booking Website
-#### Video Demo: https://youtu.be/hQbQK-tsBug
-#### Description:
+
+### [Link to Video Demo](https://youtu.be/hQbQK-tsBug)
+
+### Description:
 
 This website I created is used to book sports facilities at Mingu Sports Complex, a fictional sports complex of mine. There is a homepage that features basic information such as daily opening hours, cost of each type of sports and when to book the slots. Users can either login or register for an account. Once logged in, the "Facilities" tab provide more details about each sport facility, while the "Book" tab displays the availability of all the slots on the day itself. Users can also book their desired slots using the "Book" tab. "My Bookings" tab displays all of the user's previous bookings, while the "Top Up" tab allows the user to add cash to his or her account once it has run out.
 
-#### Source Files:
+### Source Files:
 
 Under static folder, login_styles.css includes all the CSS code for the login and register pages, while styles.css includes the CSS code for all other pages. Templates folder consist of the various HTML templates I made for my website. For instance, book_bmt.html is the page shown to the viewer if he wishes to book badminton slots, while history.html is the page that consists of all of the user's previous bookings.
 
